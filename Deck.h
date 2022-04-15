@@ -6,9 +6,19 @@
 #include <cstdlib>
 #include <ctime>
 
+#include "Card.h"
+
 class Deck
 {
-  
+    private:
+        std::vector<Card> deck;
+
+    public:
+        Deck() = default;
+
+        void shuffle();
+        Card drawCard();
+        int getDeckSize();
 };
   
 
