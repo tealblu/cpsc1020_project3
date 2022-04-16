@@ -8,10 +8,10 @@ class Card
     public:
         enum Color {purple, orange};
     private:
-
         int rank {0}; //between 1 and 10
         Color color = purple;
         int value {0};
+    
     public:
         Card() = default;
         Card(int rank, Color color) 

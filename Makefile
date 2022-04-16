@@ -1,5 +1,5 @@
 CXX = g++
-OPTIONS = -Wall -g
+OPTIONS = -Wall
 PROGRAM = main.out
 
 all: $(PROGRAM)

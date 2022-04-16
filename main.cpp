@@ -7,8 +7,7 @@ using namespace std;
 
 int main() {
 
-    int i = 5;
-    //Deck deckOfCards();
+    Deck deckOfCards;
 
   // 1. Create a deck of cards and shuffle it.
 
@@ -26,11 +25,9 @@ int main() {
 
 
 
-
-
   //TESTING CODE
-    Card cardTest();
-
+    cout << (deckOfCards.drawCard()).printCard() << endl;
+    cout << (deckOfCards.drawCard()).printCard() << endl;   
 
   return 0;
 }

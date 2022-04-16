@@ -7,3 +7,12 @@ std::string Card::printCard()
     else
         { return "orange:" + std::to_string(rank); }
 }
+
+
+int Card::getRank()
+    { return rank; }
+
+Card::Color Card::getColor()
+{
+    return color;
+}
