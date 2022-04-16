@@ -8,6 +8,8 @@ using namespace std;
 int main() {
 
   // 1. Create a deck of cards and shuffle it.
+
+
   // 2. Create two players, each one with 5 cards in their hand.
   // 3. Play five rounds. In each round:
   //    - Have computer deal a card from their hand.

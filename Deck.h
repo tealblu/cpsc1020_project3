@@ -14,7 +14,7 @@ class Deck
         std::vector<Card> deck;
 
     public:
-        Deck() = default;
+        Deck();
 
         void shuffle();
         Card drawCard();
