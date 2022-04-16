@@ -1,11 +1,16 @@
 #include "Deck.h"
 
+#include <iostream>
+
 Deck::Deck()
 {
     for(int i = 1; i <= 20; i++)
     {
         Card card(i, Card::purple);
         deck.push_back(card);
+
+        //TEST
+        std::cout << card.printCard();
     }
 }
 
