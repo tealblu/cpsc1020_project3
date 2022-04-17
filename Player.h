@@ -14,7 +14,7 @@ class Player
         int score {0};
 
         Player() = default;
-        Player(Deck deck, int N); //add member intialization
+        Player(Deck deck, int N) : hand(deck, N) {}; //add member intialization
 };
   
 

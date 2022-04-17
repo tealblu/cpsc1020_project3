@@ -19,6 +19,7 @@ Deck::Deck() //better way to do this?
     }
 }
 
+//shuffles entire deck
 void Deck::shuffle()
 {
     srand(unsigned(time(0)));
@@ -35,11 +36,10 @@ Card Deck::drawCard()
 
 }
 
-
-
+//returns number of cards currently in deck
 int Deck::getDeckSize()
 {
-
+    return deck.size();
 }
 
 
