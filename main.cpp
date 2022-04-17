@@ -7,10 +7,10 @@ using namespace std;
 
 int main() {
 
-    Deck deckOfCards;
 
   // 1. Create a deck of cards and shuffle it.
-
+    Deck deckOfCards;
+    deckOfCards.shuffle();
 
   // 2. Create two players, each one with 5 cards in their hand.
   // 3. Play five rounds. In each round:
@@ -26,8 +26,8 @@ int main() {
 
 
   //TESTING CODE
-    cout << (deckOfCards.drawCard()).printCard() << endl;
-    cout << (deckOfCards.drawCard()).printCard() << endl;   
+    Hand testHand(deckOfCards, 5);
+    cout << testHand.printHand();
 
   return 0;
 }

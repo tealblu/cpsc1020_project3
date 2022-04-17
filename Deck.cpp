@@ -4,14 +4,14 @@
 
 Deck::Deck() //better way to do this?
 {
-    for(int i = 1; i <= 20; i++)
+    for(int i = 1; i <= 10; i++)
     {
         Card card(i, Card::purple);
         deck.push_back(card);
 
     }
 
-    for(int i = 1; i <= 20; i++)
+    for(int i = 1; i <= 10; i++)
     {
         Card card(i, Card::orange);
         deck.push_back(card);
@@ -26,7 +26,8 @@ void Deck::shuffle()
 
 }
 
-Card Deck::drawCard() //memory allocation issues?
+//draws first card and then removes it from deck
+Card Deck::drawCard()
 {
     Card tempCard = deck.at(0);
     deck.erase(deck.begin());

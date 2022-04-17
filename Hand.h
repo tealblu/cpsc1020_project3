@@ -15,7 +15,7 @@ class Hand
 
     public:
         Hand() = default;
-        Hand(Deck deck, int N) : hand(N) {}; //in-class initialization??
+        Hand(Deck deck, int N); //in-class initialization??
 
         std::string printHand();
         Card dealCard(int num);

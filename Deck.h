@@ -7,7 +7,6 @@
 #include <ctime>
 
 #include "Card.h"
-
 class Deck
 {
     private:
@@ -21,5 +20,4 @@ class Deck
         int getDeckSize();
 };
   
-
 #endif // DECK_H_
